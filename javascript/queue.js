@@ -45,11 +45,11 @@ class Queue {
   // return -1 if item not in queue, otherwise integer representing 
   // how far it is from the front
   search(target) {
-    if (!this.queue.includes(target)) {
-      return -1
-    } else {
-      return this.queue.indexOf(target)
-    }
+    // if (!this.queue.includes(target)) {
+    //   return -1
+    // not necessary - indexOf - will return -1 by default if not present
+  
+    return this.queue.indexOf(target)
 
   }
 
